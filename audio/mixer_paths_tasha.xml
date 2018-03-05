@@ -2418,6 +2418,8 @@
 
     <path name="voice-handset">
         <path name="handset" />
+        <ctl name="Speaker Volume" value="1" />
+        <ctl name="Digital Gain" value="0" />
     </path>
 
     <path name="voice-handset-tmus">
@@ -2747,20 +2749,22 @@
         <path name="speaker-dmic-endfire" />
     </path>
 
-    <path name="voice-rec-dmic-ef">
-        <path name="dmic-endfire" />
-    </path>
-
     <path name="aanc-handset-mic">
         <path name="dmic-endfire" />
         <ctl name="ADC1 Volume" value="12" />
         <ctl name="ADC4 Volume" value="12" />
     </path>
 
+    <path name="voice-rec-dmic-ef">
+        <path name="dmic-endfire" />
+        <ctl name="ADC1 Volume" value="20" />
+        <ctl name="ADC4 Volume" value="20" />
+    </path>
+
     <path name="voice-rec-dmic-ef-fluence">
         <path name="dmic-endfire" />
-        <ctl name="ADC1 Volume" value="12" />
-        <ctl name="ADC4 Volume" value="12" />
+        <ctl name="ADC1 Volume" value="20" />
+        <ctl name="ADC4 Volume" value="20" />
     </path>
 
     <path name="handset-stereo-dmic-ef-liquid">
