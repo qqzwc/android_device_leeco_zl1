@@ -21,8 +21,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/leeco/zl1/device.mk)
 
 # Inherit some common MK stuff.
+TARGET_ARCH := arm64
+TARGET_DENSITY := xxxhdpi
+TARGET_BOOT_ANIMATION_RES := 1440
 $(call inherit-product, vendor/mk/config/common_full_phone.mk)
 
+# Device identifier. This must come after all inclusions.
 PRODUCT_NAME := mk_zl1
 PRODUCT_DEVICE := zl1
 PRODUCT_MANUFACTURER := LeEco
@@ -41,3 +45,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_SYSTEM_PROPERTY_BLACKLIST += ro.product.model
 
 TARGET_VENDOR := leeco
+
+EXTENDED_BUILD_TYPE=OFFICIAL
